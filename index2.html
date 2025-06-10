@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Para Rafa ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #ffe0ec, #ffffff);
+      color: #333;
+      overflow-x: hidden;
+    }
+    .intro {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffe0ec;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      color: #d10068;
+      z-index: 999;
+      animation: fadeOut 2s ease forwards;
+      animation-delay: 2s;
+    }
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+    header {
+      text-align: center;
+      padding: 100px 20px 50px;
+      opacity: 0;
+      animation: aparecer 2s ease forwards;
+      animation-delay: 2.5s;
+    }
+    h1 {
+      font-size: 3em;
+      color: #d10068;
+    }
+    @keyframes aparecer {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .btn {
+      background: #d10068;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .btn:hover { background: #ff4081; }
+    section {
+      max-width: 700px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+    h2 { color: #d10068; }
+    .momento {
+      background: #fff0f6;
+      padding: 15px 20px;
+      border-left: 5px solid #d10068;
+      margin: 15px 0;
+      border-radius: 10px;
+    }
+    .musica { margin: 15px 0; }
+    .carta {
+      background: #fff8fb;
+      padding: 30px;
+      border-radius: 15px;
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #444;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9em;
+      color: #999;
+    }
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      transform: rotate(45deg);
+      animation: float 6s infinite ease-in;
+      opacity: 0.7;
+    }
+    .heart::before, .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+    }
+    .heart::before { top: -10px; left: 0; }
+    .heart::after { left: -10px; top: 0; }
+    @keyframes float {
+      0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2em; }
+      .btn { padding: 10px 20px; font-size: 1em; }
+      .carta { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="intro">❤️❤️❤️❤️</div>
+  <div class="hearts" id="hearts-container"></div>
+  <header>
+    <h1>Rafa, eu te amo ❤️</h1>
+    <img src="846e1743-15c1-42d3-8589-eeaf4a811d13.jpg" alt="João e Rafa no elevador" style="width: 90%; max-width: 500px; border-radius: 20px; margin: 20px auto; display: block; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+    <button class="btn" onclick="scrollToSection()">Ver nossa história</button>
+  </header>
+  <section id="historia">
+    <h2>🌟 Dias Inesquecíveis</h2>
+    <div class="momento"><strong>25 de fevereiro:</strong> A primeira conversa — e o início de tudo.</div>
+    <div class="momento"><strong>8 de março:</strong> Nosso primeiro beijo.</div>
+    <div class="momento"><strong>16 de abril:</strong> Declaramos nosso amor um pelo outro pela primeira vez.</div>
+  </section>
+  <section>
+    <h2>🎧 Nossas Trilhas Sonoras</h2>
+    <div class="musica">
+      <p><strong>Congratulations</strong> - Mac Miller</p>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1OubIZ0ARYCUq5kceYUQiO" width="100%" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div class="musica">
+      <p><strong>Planos</strong> - BK</p>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7eYEQnY6Lzh3Y8jSOt3xEF" width="100%" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div class="musica">
+      <p><strong>Papoulas</strong> - Yago O Próprio</p>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4pjqWL23sQ2gGQIbyw8lXL" width="100%" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </section>
+  <section>
+    <h2>💌 Pra Você</h2>
+    <div class="carta">
+      Meu amor, eu te amo demais, você não faz ideia do quanto eu te amo.<br>
+      Todos os dias eu me apaixono mais ainda por você, as coisas são melhores com você e não quero fazer elas sem você, sempre vou te amar, você é muito especial para mim, não faz ideia de quanto bem me faz.<br>
+      Eu te quero sempre e para sempre, quero que sempre seja minha, já não me imagino mais sem você.<br>
+      Se eu tentasse te descrever, seria mais ou menos assim: linda, inteligente, gentil, talentosa, autêntica, fofa, verdadeira, carinhosa, respeitosa, especial, forte, generosa, gata, querida, sensata, gostosa, valiosa, amorosa, única...<br>
+      Existem muitos outros adjetivos que eu posso usar para tentar te descrever, porém, você é maior do que tudo isso, você é muito para mim.<br>
+      Eu te amo, amo muito.<br><br>
+      Com todo meu amor, João ❤️
+    </div>
+  </section>
+  <footer>Feito com amor por João para Rafaela - Dia dos Namorados 2025</footer>
+  <script>
+    function scrollToSection() {
+      document.getElementById("historia").scrollIntoView({ behavior: "smooth" });
+    }
+    const container = document.getElementById("hearts-container");
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = 4 + Math.random() * 2 + "s";
+      heart.style.opacity = Math.random();
+      heart.style.transform = `rotate(45deg) scale(${0.5 + Math.random()})`;
+      heart.style.background = `red`;
+      container.appendChild(heart);
+      setTimeout(() => heart.remove(), 6000);
+    }
+    setInterval(createHeart, 300);
+  </script>
+</body>
+</html>
